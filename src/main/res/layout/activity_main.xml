@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <!-- White Bar at the Top -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/whiteBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#6A1B9A"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- App Name TextView -->
+
+    <!-- Logout ImageView -->
+    <ImageView
+        android:id="@+id/logoutimg"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/power" />
+
+    <!-- RecyclerView for Users -->
+
+    <!-- Camera ImageView -->
+
+    <!-- Chat ImageView -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainuserrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:layout_above="@+id/cameraImg"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp"
+        app:cardCornerRadius="12dp" />
+
+    <ImageView
+        android:id="@+id/cameraImg"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/camera" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/chatone" />
+
+    <!-- Settings ImageView -->
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/sett" />
+
+</RelativeLayout>
